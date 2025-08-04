@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="sooq" customModuleProvider="target">
             <connections>
+                <outlet property="buttonPressed" destination="YZl-9i-dCd" id="b26-qh-fWd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +18,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-9i-dCd">
+                    <rect key="frame" x="30" y="391" width="333" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="cge-dr-HVk"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemCyanColor"/>
-            <point key="canvasLocation" x="51" y="20"/>
+            <constraints>
+                <constraint firstItem="YZl-9i-dCd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Hng-Pa-HdG"/>
+                <constraint firstItem="YZl-9i-dCd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="332" id="WI2-0P-XwM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YZl-9i-dCd" secondAttribute="trailing" constant="30" id="s8k-5Z-3ec"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
